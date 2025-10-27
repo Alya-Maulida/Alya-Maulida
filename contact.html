@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • Ay's Hijab</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="index.html"><div class="logo-mark">AH</div><h1>Ay's Hijab</h1></a>
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="cta" href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener">Chat WA</a>
+  </header>
+
+  <main style="padding-top:110px">
+    <section class="section">
+      <h3>Contact Us</h3>
+      <p class="lead">Questions? Orders? Send us a message or chat via WhatsApp.</p>
+
+      <div class="contact-card">
+        <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah dikirim (dummy). Silakan chat WA untuk order.');">
+          <label style="font-size:.92rem; color:#444">Nama</label>
+          <input class="input" type="text" placeholder="Nama lengkap" required>
+
+          <label style="font-size:.92rem; color:#444; margin-top:8px">Email</label>
+          <input class="input" type="email" placeholder="email@domain.com" required>
+
+          <label style="font-size:.92rem; color:#444; margin-top:8px">Pesan</label>
+          <textarea class="input" rows="5" placeholder="Tulis pesan..." required></textarea>
+
+          <div style="display:flex; gap:12px; margin-top:12px">
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            <a class="btn btn-outline" href="https://wa.me/6285881615726" target="_blank">Chat via WA</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer style="margin-top:40px">
+      <p>© 2025 Ay’s Hijab • Fast replies on WhatsApp</p>
+    </footer>
+  </main>
+</body>
+</html>

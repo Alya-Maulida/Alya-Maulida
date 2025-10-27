@@ -1,0 +1,145 @@
+:root{
+  --cream: #ECF4E8;
+  --sage: #cfe7db;
+  --deep-sage: #7aa07f;
+  --accent: #7aa07f;
+  --muted: #666;
+  --card: #ffffff;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(16, 24, 40, 0.06);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; font-family:"Poppins",system-ui,Segoe UI,Roboto, "Helvetica Neue", Arial; background:var(--cream); color:var(--muted); scroll-behavior:smooth}
+
+/* ---------- NAVBAR (floating) ---------- */
+.header {
+  position:fixed;
+  top:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:88%;
+  max-width:1200px;
+  background:var(--glass);
+  backdrop-filter: blur(6px);
+  border-radius:56px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 22px;
+  box-shadow:var(--shadow);
+  z-index:999;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.header.sticky{transform:translateX(-50%) translateY(-6px); box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.brand{
+  display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--deep-sage)
+}
+.logo-mark{
+  width:42px; height:42px; border-radius:10px; background:linear-gradient(135deg,var(--sage),var(--accent)); display:flex; align-items:center; justify-content:center;
+  color:#fff; font-weight:600; font-size:18px; box-shadow:0 4px 12px rgba(122,160,127,0.25)
+}
+.brand h1{font-family:"Playfair Display",serif; font-size:1.05rem; margin:0; color:var(--deep-sage)}
+.nav a{ text-decoration:none; color:var(--muted); margin:0 10px; font-weight:500; font-size:.92rem; padding:8px 12px; border-radius:999px; transition:all .18s}
+.nav a:hover{color:#fff; background:linear-gradient(90deg,var(--accent),var(--deep-sage))}
+
+/* CTA */
+.cta{
+  background:linear-gradient(90deg,var(--accent),var(--deep-sage));
+  color:#fff; padding:9px 14px; border-radius:999px; text-decoration:none; font-weight:600; font-size:.92rem; box-shadow:0 6px 20px rgba(122,160,127,0.18)
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  min-height:86vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  padding:110px 6% 70px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.hero-left{max-width:560px; animation:slideUp .9s ease both}
+.kicker{display:inline-block; font-size:.82rem; padding:6px 10px; background:var(--deep-sage); color:var(--sage); border-radius:999px; margin-bottom:16px; font-weight:600}
+.hero h2{font-family:"Playfair Display",serif; color:var(--deep-sage); font-size:2.05rem; margin:0 0 12px}
+.hero p{font-size:.96rem; line-height:1.7; color:#556}
+.hero-cta{display:flex; gap:12px; margin-top:18px}
+.btn{padding:10px 16px; border-radius:28px; text-decoration:none; font-weight:600; font-size:.95rem}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--deep-sage)); color:#fff; box-shadow:0 8px 28px rgba(122,160,127,0.15)}
+.btn-outline{border:1px solid rgba(122,160,127,0.18); color:var(--deep-sage); background:transparent}
+
+/* hero image */
+.hero-right{flex:0 0 440px; display:flex; justify-content:center; animation:fadeIn .9s ease both}
+.hero-img{width:100%; max-width:420px; border-radius:18px; box-shadow:var(--shadow); transform:translateY(0); transition:transform .35s}
+.hero-img:hover{transform:translateY(-8px)}
+
+/* ---------- SHOP (products) ---------- */
+.section {padding:70px 6%; max-width:1200px; margin:0 auto}
+.section h3{font-family:"Playfair Display",serif; color:var(--deep-sage); font-size:1.2rem; margin-bottom:8px}
+.section p.lead{font-size:.95rem; color:#5b6460; margin-bottom:22px}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:var(--card);
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 30px rgba(16,24,40,0.06);
+  transition:transform .28s ease, box-shadow .28s;
+  display:flex; flex-direction:column;
+}
+.card:hover{transform:translateY(-8px); box-shadow:0 18px 40px rgba(16,24,40,0.08)}
+.card .imgwrap{height:240px; overflow:hidden}
+.card img{width:100%; height:100%; object-fit:cover; display:block}
+.card-body{padding:14px 16px; flex:1; display:flex; flex-direction:column}
+.card h4{font-size:1rem; margin:0 0 6px; color:var(--deep-sage)}
+.card span.price{font-weight:600; color:var(--accent); font-size:.95rem; margin-bottom:10px}
+.card .actions{margin-top:auto; display:flex; gap:8px; align-items:center}
+.buy{background:var(--accent); color:#ffffff; padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:600}
+.view{background:transparent; border:1px solid rgba(122,160,127,0.18); padding:8px 12px; border-radius:10px; color:var(--deep-sage); text-decoration:none}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center}
+.about-card{background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.95)); border-radius:14px; padding:22px; box-shadow:var(--shadow)}
+
+/* ---------- CONTACT ---------- */
+.contact-card{max-width:680px; margin:0 auto; padding:22px; background:var(--card); border-radius:14px; box-shadow:var(--shadow)}
+.input, textarea{width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e6e6e6; outline:none; font-size:.95rem}
+
+/* ---------- FOOTER ---------- */
+footer{padding:36px 6%; text-align:center; color:#6b6b6b; margin-top:30px}
+
+/* ---------- UTIL & ANIM ---------- */
+@keyframes fadeIn{from{opacity:0} to{opacity:1}}
+@keyframes slideUp{from{transform:translateY(18px);opacity:0} to{transform:translateY(0);opacity:1}}
+.fade-up{animation:slideUp .9s ease both}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+  .products{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:120px 5% 40px; flex-direction:column-reverse; gap:26px}
+  .hero-right{order:-1}
+  .hero-left{text-align:center}
+  .about-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .header{width:94%}
+  .products{grid-template-columns:1fr}
+  .hero h2{font-size:1.5rem}
+  .brand h1{font-size:.95rem}
+  .hero-right img {
+  width: 90%;
+  margin: auto;}
+
+.nav {
+  display: none; /* sembunyikan navbar di HP agar lebih rapi */}
+
+.cta {
+  padding: 8px 12px;
+  font-size: 0.85rem;}
+}

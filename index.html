@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ay's Hijab — Home</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header" id="siteHeader">
+    <a class="brand" href="index.html">
+      <div class="logo-mark">AH</div>
+      <h1>Ay's Hijab</h1>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html#home">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="cta" href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener">Chat WA</a>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="kicker">New Arrival</div>
+        <h2>Hijabs that speak gentle confidence</h2> 
+        Ay’s Hijab is a local hijab brand that brings elegance through simplicity. Made from soft, breathable fabrics, each collection is thoughtfully designed for everyday comfort and an effortlessly graceful look.
+<br><br>
+Our pastel tones and modest designs reflect the natural charm of Indonesian women and gentle, confident, and full of character.
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="shop.html">Shop Collection</a>
+          <a class="btn btn-outline" href="about.html">Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img class="hero-img" src="images/bg8.jpeg" alt="Ay's Hijab hero">
+      </div>
+    </section>
+
+    <!-- QUICK PRODUCTS PREVIEW -->
+    <section class="section">
+      <h3>Best Sellers</h3>
+      <p class="lead">Popular picks — soft textures & modern colours.</p>
+
+      <div class="products fade-up">
+        <!-- sample small cards; link to shop -->
+        <div class="card">
+          <div class="imgwrap"><img src="images/hijab1.jpg" alt="Rose Silk Hijab"></div>
+          <div class="card-body">
+            <h4>Terracotta Breeze Hijab</h4>
+            <span class="price">Rp 89.000</span>
+            <div class="actions">
+              <a class="buy" href="https://wa.me/62XXXXXXXXXX" target="_blank">Beli Sekarang</a>
+              <a class="view" href="shop.html">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgwrap"><img src="images/hijab2.jpg" alt="Mocha Flow Scarf"></div>
+          <div class="card-body">
+            <h4>Luna Satin Hijab</h4>
+            <span class="price">Rp 95.000</span>
+            <div class="actions">
+              <a class="buy" href="https://wa.me/62XXXXXXXXXX" target="_blank">Beli Sekarang</a>
+              <a class="view" href="shop.html">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imgwrap"><img src="images/hijab3.jpg" alt="Soft Sage Square"></div>
+          <div class="card-body">
+            <h4>Amber Glow Shawl
+</h4>
+            <span class="price">Rp 85.000</span>
+            <div class="actions">
+              <a class="buy" href="https://wa.me/62XXXXXXXXXX" target="_blank">Beli Sekarang</a>
+              <a class="view" href="shop.html">Lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO / ABOUT BLURB -->
+    <section class="section" style="margin-top:18px; background:linear-gradient(180deg, rgba(207,231,219,0.35), transparent); border-radius:16px; padding:36px 6%;">
+      <div style="display:flex; gap:18px; align-items:center; flex-wrap:wrap">
+        <div style="flex:1; min-width:260px">
+          <h3>Why choose Ay's Hijab?</h3>
+          <p class="lead">Materials chosen for breathability, cut considered for modest comfort, and colours curated to match your everyday palette. We ship fast and respond quickly on WhatsApp.</p>
+        </div>
+        <div style="flex:0 0 220px"><img src="images/bg1.jpg" style="width:100%; border-radius:12px; box-shadow:var(--shadow)" alt=""></div>
+      </div>
+    </section>
+
+    <footer style="margin-top:40px">
+      <p>© 2025 Ay’s Hijab • Crafted with care • <a href="privacy.html" style="color:var(--deep-sage)">Privacy</a></p>
+    </footer>
+  </main>
+
+  <script>
+    // minimal sticky effect
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', ()=> {
+      if(window.scrollY > 30) header.classList.add('sticky'); else header.classList.remove('sticky');
+    });
+  </script>
+</body>
+</html>
