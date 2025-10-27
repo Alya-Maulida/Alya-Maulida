@@ -23,8 +23,12 @@
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-
     <a class="cta" href="https://wa.me/62XXXXXXXXXX" target="_blank" rel="noopener">Chat WA</a>
+<div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </header>
 
   <!-- HERO -->
@@ -125,5 +129,15 @@ Our pastel tones and modest designs reflect the natural charm of Indonesian wome
 
   gtag('config', 'G-WG7R29G7RG');
 </script>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  nav.classList.toggle('active');
+});
+</script>
+
 </body>
 </html>
