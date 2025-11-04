@@ -1,18 +1,61 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ay's Hijab — Home</title>
-
-  <!-- ✅ Favicon -->
-  <!-- Pastikan file bernama persis "favicon.png" (huruf kecil semua) -->
-  <link rel="icon" type="image/png" href="./images/favicon2.png">
-
-  <!-- Fonts & CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  ...
   <link rel="stylesheet" href="./style.css">
+  
+  <!-- JSON-LD Product untuk halaman shop -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Terracotta Breeze Hijab",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab1.jpg",
+      "description": "Hijab lembut dengan warna terracotta elegan, cocok untuk tampilan santai maupun formal.",
+      "brand": { "@type": "Brand", "name": "Ay's Hijab" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "IDR",
+        "price": "89000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Luna Satin Hijab",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab2.jpg",
+      "description": "Hijab satin lembut dengan kilau mewah, memberikan tampilan anggun di setiap kesempatan.",
+      "brand": { "@type": "Brand", "name": "Ay's Hijab" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "IDR",
+        "price": "95000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Amber Glow Shawl",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab3.jpg",
+      "description": "Shawl berwarna amber hangat, nyaman digunakan sehari-hari dengan bahan ringan dan adem.",
+      "brand": { "@type": "Brand", "name": "Ay's Hijab" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "IDR",
+        "price": "85000",
+        "availability": "https://schema.org/InStock",
+        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
+      }
+    }
+  ]
+  </script>
 </head>
+
 <body>
   <header class="header" id="siteHeader">
     <a class="brand" href="index.html">
