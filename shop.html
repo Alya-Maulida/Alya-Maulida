@@ -6,7 +6,7 @@
   <title>Ay's Hijab — Shop</title>
 
   <!-- ✅ Google Analytics (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WG7R29G7RG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -37,65 +37,47 @@
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Terracotta Breeze Hijab",
-      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab1.jpg",
-      "description": "Hijab lembut dengan warna terracotta elegan, cocok untuk tampilan santai maupun formal.",
+      "name": "Rose Silk Hijab",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/bg9.jpeg",
+      "description": "Lightweight silk-like fabric, drapes elegantly.",
       "brand": { "@type": "Brand", "name": "Ay's Hijab" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "IDR",
-        "price": "89000",
-        "availability": "https://schema.org/InStock",
-        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
-      }
+      "offers": { "@type": "Offer", "priceCurrency": "IDR", "price": "89000", "availability": "https://schema.org/InStock" }
     },
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Luna Satin Hijab",
-      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab2.jpg",
-      "description": "Hijab satin lembut dengan kilau mewah, memberikan tampilan anggun di setiap kesempatan.",
+      "name": "Mocha Flow Scarf",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/bg10.jpeg",
+      "description": "Soft matte finish, minimal slip.",
       "brand": { "@type": "Brand", "name": "Ay's Hijab" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "IDR",
-        "price": "95000",
-        "availability": "https://schema.org/InStock",
-        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
-      }
+      "offers": { "@type": "Offer", "priceCurrency": "IDR", "price": "95000", "availability": "https://schema.org/InStock" }
     },
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Amber Glow Shawl",
-      "image": "https://alya-maulida.github.io/ays-hijab/images/hijab3.jpg",
-      "description": "Shawl berwarna amber hangat, nyaman digunakan sehari-hari dengan bahan ringan dan adem.",
+      "name": "Soft Sage Square",
+      "image": "https://alya-maulida.github.io/ays-hijab/images/bg11.jpeg",
+      "description": "Perfect for everyday styling.",
       "brand": { "@type": "Brand", "name": "Ay's Hijab" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "IDR",
-        "price": "85000",
-        "availability": "https://schema.org/InStock",
-        "url": "https://alya-maulida.github.io/ays-hijab/shop.html"
-      }
+      "offers": { "@type": "Offer", "priceCurrency": "IDR", "price": "85000", "availability": "https://schema.org/InStock" }
     }
   ]
   </script>
 </head>
+
 <body>
+  <!-- ✅ HEADER -->
   <header class="header" id="siteHeader">
     <a class="brand" href="index.html">
       <div class="logo-mark">
-        <img src="./images/favicon.png" 
-             alt="Ay's Hijab logo" 
-             style="width: 50px; height: 50px; object-fit: contain; border-radius: 50%; vertical-align: middle; margin-right: 8px;">
+        <img src="./images/favicon.png" alt="Ay's Hijab logo" style="width: 50px; height: 50px; object-fit: contain; border-radius: 50%; vertical-align: middle; margin-right: 8px;">
       </div>
       <h1>Ay's Hijab</h1>
     </a>
 
     <nav class="nav">
       <a href="index.html#home">Home</a>
-      <a href="shop.html">Shop</a>
+      <a href="shop.html" class="active">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -103,12 +85,14 @@
     <a class="cta" href="https://wa.me/6289636232652" target="_blank" rel="noopener">Chat WA</a>
   </header>
 
+  <!-- ✅ SHOP CONTENT -->
   <main style="padding-top:110px">
     <section class="section">
       <h3>Shop — Ay's Hijab Collection</h3>
       <p class="lead">Six curated pieces — fabrics & shades chosen to match a modern hijabi wardrobe.</p>
 
       <div class="products">
+
         <!-- Product 1 -->
         <div class="card">
           <div class="imgwrap"><img src="images/bg9.jpeg" alt="Rose Silk Hijab"></div>
@@ -117,7 +101,12 @@
             <span class="price">Rp 89.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Lightweight silk-like fabric, drapes elegantly.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Rose%20Silk%20Hijab">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Rose%20Silk%20Hijab"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Rose Silk Hijab'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -131,7 +120,12 @@
             <span class="price">Rp 95.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Soft matte finish, minimal slip.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Mocha%20Flow%20Scarf">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Mocha%20Flow%20Scarf"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Mocha Flow Scarf'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -145,7 +139,12 @@
             <span class="price">Rp 85.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Perfect for everyday styling.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Soft%20Sage%20Square">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Soft%20Sage%20Square"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Soft Sage Square'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -159,7 +158,12 @@
             <span class="price">Rp 99.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Flowy chiffon for special moments.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Elegant%20Chiffon">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Elegant%20Chiffon"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Elegant Chiffon'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -173,7 +177,12 @@
             <span class="price">Rp 79.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Breathable cotton, easy-care.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Everyday%20Cotton">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Everyday%20Cotton"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Everyday Cotton'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -187,7 +196,12 @@
             <span class="price">Rp 120.000</span>
             <p style="font-size:.88rem; color:#666; margin-top:6px">Premium blend with refined sheen.</p>
             <div class="actions">
-              <a class="buy" href="https://wa.me/62XXXXXXXXXX?text=Saya%20mau%20beli%20Lux%20Blend">Beli Sekarang</a>
+              <a class="buy" 
+                 href="https://wa.me/6289636232652?text=Saya%20mau%20beli%20Lux%20Blend"
+                 target="_blank"
+                 onclick="gtag('event', 'click_beli', {'event_category':'ecommerce','event_label':'Lux Blend'});">
+                 Beli Sekarang
+              </a>
               <a class="view" href="#">Detail</a>
             </div>
           </div>
@@ -200,23 +214,17 @@
       <p>© 2025 Ay’s Hijab • All Rights Reserved</p>
     </footer>
   </main>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG7R29G7RG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WG7R29G7RG');
-</script>
-<script>
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-
-menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
-  nav.classList.toggle('active');
-});
-</script>
+  <!-- ✅ Menu Script -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    if(menuToggle){
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    }
+  </script>
 </body>
 </html>
